@@ -1,0 +1,48 @@
+@import '../../App/vars';
+
+.header {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2.5px);
+}
+.header__container {
+    max-width: $max-width;
+    margin: 0 auto;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__menu {
+}
+.menu__list {
+    display: flex;
+    gap: 60px;
+}
+.menu__item {
+    line-height: 20px;
+    color: #002040;
+    cursor: pointer;
+}
+.header__contacts {
+    display: flex;
+}
+.contacts__text {
+    display: flex;
+    flex-direction: column;
+    color: #002040;
+    margin: auto 0;
+}
+.contacts__number {
+    font-weight: $bold;
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: auto;
+}
+.contacts__graph {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px
+}
+.contacts__image {
+    margin-top: 18px;
+}
