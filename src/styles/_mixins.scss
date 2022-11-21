@@ -1,0 +1,15 @@
+@import '../styles/vars';
+
+
+@mixin globalTitle {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #002040;
+}
+
+@mixin container {
+    max-width: $max-width;
+    margin: 0 auto;
+}

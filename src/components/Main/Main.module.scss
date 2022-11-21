@@ -1,0 +1,56 @@
+@import '../../styles/vars';
+@import '../../styles/mixins';
+
+.main {
+    &__container {
+        @include container;
+    }
+    &__content {
+        padding: 209px 0px;
+        max-width: 730px;
+    }
+    &__text {
+
+    }
+    &__buttons {
+        margin-top: 40px;
+        display: flex;
+        div {
+            padding: 30px 60px;
+            line-height: 20px;
+            cursor: pointer;
+        }
+        gap: 10px;
+    }
+    &__button1 {
+        h4 {
+            font-weight: 700;
+            color: #FFF;
+        }
+        display: flex;
+        background: linear-gradient(180deg, #409FFF 0%, #007FFF 100%);
+        box-shadow: 0px 10px 10px rgba(0, 32, 64, 0.1), inset 0px 2px 0px rgba(255, 255, 255, 0.25), inset 0px -2px 0px rgba(0, 32, 64, 0.1);
+        border-radius: 79px;
+        gap: 25px;
+        
+    }
+    &__button2 {
+        
+        border: 1px solid #002040;
+        border-radius: 79px;
+        color: #002040;
+    }
+}
+.text {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 54px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #002040;
+    span {
+        color: #007FFF;
+        margin-bottom: 20px;
+    }
+} 
+
+

@@ -1,9 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700&display=swap&subset=cyrillic-ext);
-@import './_reset.scss';
-@import './_vars.scss';
+@import '../styles/reset';
+@import '../styles/_vars.scss';
 
 
 .App {
     font-family: $f-family;
     font-weight: 500;
+}
+.header_main {
+    background-image: url(../assets/images/Bg.jpg);
 }
