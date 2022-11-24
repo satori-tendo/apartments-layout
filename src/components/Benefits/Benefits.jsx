@@ -17,6 +17,7 @@ import fourthInnerImg from '../../assets/images/benefits/4.svg'
 import fifthInnerImg from '../../assets/images/benefits/5.svg'
 import sixthInnerImg from '../../assets/images/benefits/6.svg'
 
+
 const Benefits = () => {
   return (
     <div className={s.benefits}>

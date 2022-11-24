@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './Header.module.scss'
-import logo from '../../assets/images/Logo.svg'
-import phoneButton from '../../assets/images/Button.png'
+import logo from '../../assets/images/header/Logo.svg'
+import phoneButton from '../../assets/images/header/Button.png'
 
 const Header = (props) => {
     return (
