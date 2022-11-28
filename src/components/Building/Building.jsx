@@ -25,11 +25,11 @@ const Building = () => {
 
     return (
         <div className={s.building}>
-            <div className={s.building__container}>
-                <h1 className={s.building__title}>
+            <div className={s.container}>
+                <h1 className={s.title}>
                     Ход строительства
                 </h1>
-                <div className={s.building__slider}>
+                <div className={s.slider}>
                     <Slider {...settings} className={s.slider}>
                         <Card numbOfPhotos={15} image={Frame1} someText={'2021 / Август'}/>
                         <Card numbOfPhotos={5} image={Frame2} someText={'2021 / Июль'}/>

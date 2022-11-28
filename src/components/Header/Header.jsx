@@ -6,24 +6,24 @@ import phoneButton from '../../assets/images/header/Button.png'
 const Header = (props) => {
     return (
         <header className={s.header}>
-            <div className={s.header__container}>
+            <div className={s.container}>
                 <div className="header__image">
                     <img src={logo} alt="" />
                 </div>
-                <nav className={s.header__menu}>
-                    <ul className={s.menu__list}>
-                        <li className={s.menu__item}>О компании</li>
-                        <li className={s.menu__item}>Новости</li>
-                        <li className={s.menu__item}>Документы</li>
-                        <li className={s.menu__item}>Контакты</li>
+                <nav className={s.menu}>
+                    <ul className={s.list}>
+                        <li className={s.menuItem}>О компании</li>
+                        <li className={s.menuItem}>Новости</li>
+                        <li className={s.menuItem}>Документы</li>
+                        <li className={s.menuItem}>Контакты</li>
                     </ul>
                 </nav>
-                <div className={s.header__contacts}>
-                    <div className={s.contacts__text}>
-                        <span className={s.contacts__number}>+7 982 45-22-67</span>
-                        <span className={s.contacts__graph}>Пн-Пт. с 8:00 до 19:00</span>
+                <div className={s.contacts}>
+                    <div className={s.text}>
+                        <span className={s.number}>+7 982 45-22-67</span>
+                        <span className={s.graph}>Пн-Пт. с 8:00 до 19:00</span>
                     </div>
-                    <div className={s.contacts__image}>
+                    <div className={s.phoneImage}>
                         <img src={phoneButton} alt="" />
                     </div>
                 </div>

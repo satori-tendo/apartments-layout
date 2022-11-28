@@ -2,78 +2,70 @@
 
 .layout {
     padding-bottom: 160px;
-    &__container {
+    .container {
         @include container;
-    }
-    &__title {
-        @include globalTitle;
-    }
-    &__content {
-        display: flex;
-        background: #fff;
-        padding: 40px;
-        gap: 80px;
-    }
-    &__info {
-        padding: 40px;
-        background: #F2F9FF;
-    }
-}
-.info {
-    &__buttons {
-        display: flex;
-        justify-content: space-between;
-        gap: 10px;
-        padding: 10px;
-        background: #FFFFFF;
-        box-shadow: 0px 20px 20px rgba(0, 63, 128, 0.05);
-        border-radius: 70px;
-
-        button {
-            padding: 15px 86px;
-            border-radius: 50px;
-            border: none;
-            cursor: pointer;
+        .title {
+            @include globalTitle;
         }
-        button:first-child {
+        .content {
+            display: flex;
+            background: #fff;
+            padding: 40px;
+            gap: 80px;
+            box-shadow: 0px 20px 20px rgba(0, 63, 128, 0.05);
+            .info {
+                padding: 40px;
+                background: #F2F9FF;
+                border-radius: 10px;
+                .buttons {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 10px;
+                    padding: 10px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 20px 20px rgba(0, 63, 128, 0.05);
+                    border-radius: 70px;
             
-        }
-        button:nth-child(2) {
-            
+                    button {
+                        padding: 15px 86px;
+                        border-radius: 50px;
+                        border: none;
+                        cursor: pointer;
+                    }
+                    button:first-child {
+                        
+                    }
+                    button:nth-child(2) {
+                        
+                    }
+                }
+                .text {
+                    margin: 40px 0px 20px 0px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    text-align: center;
+                    span {
+                        color: #002040;
+                        font-weight: 600;
+                    }
+                    span:first-child {
+                        font-size: 24px;
+                        line-height: 29px; 
+                    }
+                    span:nth-child(2) {
+                        font-size: 36px;
+                        line-height: 44px;
+                    }
+                }
+                .mainButton {
+                    @include mainButton;
+                    margin: 0px 99.5px;
+                }
+            }
         }
     }
-    &__text {
-        margin: 40px 0px 20px 0px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-        span {
-            color: #002040;
-            font-weight: 600;
-        }
-        span:first-child {
-            font-size: 24px;
-            line-height: 29px; 
-        }
-        span:nth-child(2) {
-            font-size: 36px;
-            line-height: 44px;
-        }
-    }
-    &__mainButton {
-        padding: 30px 60px;
-        background: linear-gradient(180deg, #409FFF 0%, #007FFF 100%);
-        box-shadow: 0px 10px 10px rgba(0, 32, 64, 0.1), inset 0px 2px 0px rgba(255, 255, 255, 0.25), inset 0px -2px 0px rgba(0, 32, 64, 0.1);
-        border-radius: 79px;
-        border: none;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 20px;
-        color: #FFFFFF;
-        margin: 0px 99.5px;
-        cursor: ponter;
-    }
+    
 }
 .activeButton {
     color: #FFFFFF;

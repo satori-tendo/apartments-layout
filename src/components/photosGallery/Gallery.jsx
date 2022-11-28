@@ -26,9 +26,9 @@ const Gallery = () => {
 
     return (
         <div className={s.gallery}>
-            <div className={s.gallery__container}>
-                <h1 className={s.gallery__title}>Галерея наших фото</h1>
-                <div className={s.gallery__slider}>
+            <div className={s.container}>
+                <h1 className={s.title}>Галерея наших фото</h1>
+                <div className={s.slider}>
                     <Slider {...settings} className={s.slider}>
                         <Card image={Photo1}/>
                         <Card image={Photo2} />

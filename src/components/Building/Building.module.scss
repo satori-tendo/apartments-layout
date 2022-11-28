@@ -3,50 +3,51 @@
 
 .building {
     padding-bottom: 160px;
-    &__container {
-        @include container
-    }
-    &__title {
-        @include globalTitle;
-    }
-    &__slider {
-        margin-left: 15px;
+    .container {
+        @include container;
+        .title {
+            @include globalTitle;
+        }
+        .slider {
+            margin-left: 15px;
+        }
     }
 }
 .card {
     position: relative;
-    &__text {
+    .text {
         display: flex;
         gap: 10px;
         align-items: center;
         position: absolute;
         top: 350px;
         left: 20px;
+        .numbOfPhotos {
+            display: flex;
+            align-items: center;
+            padding: 5px 10px;
+            background: rgba(255, 255, 255, 0.5);
+            box-shadow: 0px 10px 10px rgba(0, 32, 64, 0.1);
+            backdrop-filter: blur(2.5px);
+            border-radius: 30px;
+            .number {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+                color: #FFFFFF;
+                width: 24px;
+                height: 20px;
+            }        
+        }
+        .someText {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            color: #FFFFFF;
+        }
     }
-    &__numbOfPhotos {
-        display: flex;
-        align-items: center;
-        padding: 5px 10px;
-        background: rgba(255, 255, 255, 0.5);
-        box-shadow: 0px 10px 10px rgba(0, 32, 64, 0.1);
-        backdrop-filter: blur(2.5px);
-        border-radius: 30px;        
-    }
-    &__number {
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 20px;
-        text-align: center;
-        color: #FFFFFF;
-        width: 24px;
-        height: 20px;
-    }
-    &__someText {
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 22px;
-        color: #FFFFFF;
-    }
+    
 }
 .nextArrow {
     position: absolute;

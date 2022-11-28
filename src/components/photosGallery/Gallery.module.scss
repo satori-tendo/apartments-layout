@@ -2,20 +2,23 @@
 
 .gallery {
     padding: 0px 0px 160px 0px ;
-    &__container {
+    .container {
         @include container;
+        .title {
+            @include globalTitle;
+        }
+        .slider {
+            margin-left: 15px;
+        }
     }
-    &__title {
-        @include globalTitle;
+
+    .card {
+        .image {
+            border-radius: 20px;
+        }
     }
-    &__slider {
-        margin-left: 15px;
-    }
-    
 }
-.card__image {
-    border-radius: 20px;
-}
+
 .nextArrow {
     position: absolute;
     top: 175px;

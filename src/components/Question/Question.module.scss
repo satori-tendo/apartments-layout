@@ -1,0 +1,34 @@
+@import '../../styles/mixins';
+
+.question {
+    .container {
+        @include container;
+        .title {
+            @include globalTitle;
+        }
+        .content {
+            display: flex;
+            background: #FFFFFF;
+            background-width: 100%;
+            .items {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            .item {
+                padding: 40px;
+                background: #F2F9FF;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                .image {
+                    padding: 25px;
+                    border-radius: 79px;
+                    background-color: #409FFF;
+                    margin-right: 40px;
+                }
+            }
+        }
+    }
+    
+}

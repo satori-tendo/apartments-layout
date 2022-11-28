@@ -3,12 +3,12 @@ import s from './Benefits.module.scss'
 
 const Benefit = (props) => {
     return ( 
-        <div className={s.benefits__benefit}>
-            <div className={s.benefits__imageDiv}>    
-                <img src={props.imageSrc} alt="" className={s.benefits__image} />
-                <div className={s.benefits__innerContent}>
-                    <img src={props.innerImg} alt="" className={s.innerContent__image}/>
-                    <span className={s.innerContent__text}>{props.innerText}</span>
+        <div className={s.benefit}>
+            <div className={s.imageDiv}>    
+                <img src={props.imageSrc} alt="" className={s.image} />
+                <div className={s.innerContent}>
+                    <img src={props.innerImg} alt="" className={s.innerImage}/>
+                    <span className={s.innerText}>{props.innerText}</span>
                 </div>   
             </div>
         </div>

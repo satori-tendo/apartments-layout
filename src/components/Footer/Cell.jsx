@@ -3,7 +3,7 @@ import s from './Footer.module.scss'
 
 const Cell = (props) => {
     return (
-        <div className={s.secondRow__cell}>
+        <div className={s.cell}>
             <span>{props.firstSpan}</span>
             <span>{props.secondSpan}</span>
         </div>

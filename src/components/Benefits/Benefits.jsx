@@ -21,11 +21,11 @@ import sixthInnerImg from '../../assets/images/benefits/6.svg'
 const Benefits = () => {
   return (
     <div className={s.benefits}>
-      <div className={s.benefits__container}>
-        <h1 className={s.benefits__title}>
+      <div className={s.container}>
+        <h1 className={s.title}>
             Преимущества жизни в ЖК “Возрождение”
         </h1>
-        <div className={s.benefits__benefits}>
+        <div className={s.benefitsList}>
             <Benefit imageSrc={Frame1} innerText={'Экология'} innerImg={firstInnerImg}/>
             <Benefit imageSrc={Frame2} innerText={'Доступная стоимость'} innerImg={secondInnerImg}/>
             <Benefit imageSrc={Frame3} innerText={'Надежность'} innerImg={thirdInnerImg}/>
