@@ -1,15 +1,17 @@
 @import '../../styles/mixins';
 
+.title {
+    @include globalTitle;
+}
 .question {
+    background-color: #fff;
+    padding: 40px 0px;
+    margin-bottom: 160px;
     .container {
         @include container;
-        .title {
-            @include globalTitle;
-        }
         .content {
             display: flex;
-            background: #FFFFFF;
-            background-width: 100%;
+            justify-content: space-between;
             .items {
                 display: flex;
                 flex-direction: column;
@@ -21,12 +23,70 @@
                 border-radius: 20px;
                 display: flex;
                 align-items: center;
+                max-width: 840px;
                 .image {
-                    padding: 25px;
+                    padding: 30px;
                     border-radius: 79px;
                     background-color: #409FFF;
                     margin-right: 40px;
                 }
+                .text {
+                    color: #002040;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    .itemTitle {
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 29px;
+                    }
+                    .subtitle {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                }
+                
+            }
+            .questions {
+                background: #F2F9FF;
+                border-radius: 20px;
+                text-align: center;
+                .questionsContent {
+                    padding: 138px 40px;
+                    .text {
+                        max-width: 320px;
+                        margin-bottom: 30px;
+                        .title {
+                            font-weight: 600;
+                            font-size: 24px;
+                            line-height: 29px;
+                            text-align: center;
+                            color: #002040;
+                            margin-bottom: 0px;
+                        }
+                        .subtitle {
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 22px;
+                            text-align: center;
+                            color: #002040;
+                            margin: 20px 0px;    
+                        }
+                        .number {
+                            font-weight: 600;
+                            font-size: 24px;
+                            line-height: 29px;
+                            text-align: center;
+                            color: #002040;
+                        }
+                    }
+                    .button {
+                        max-width: 327px;
+                        @include mainButton;
+                    }
+                }
+                
             }
         }
     }

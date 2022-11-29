@@ -6,7 +6,7 @@ const Item = (props) => {
         <div className={s.item}>
             <img src={props.icon} alt="" className={s.image} />
             <div className={s.text}>
-                <h2 className={s.title}>{props.title}</h2>
+                <h2 className={s.itemTitle}>{props.title}</h2>
                 <h3 className={s.subtitle}>{props.subtitle}</h3>
             </div>
         </div>
