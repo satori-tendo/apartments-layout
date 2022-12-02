@@ -1,6 +1,6 @@
 import React from 'react'
 import s from './Building.module.scss'
-import photo from '../../assets/images/building/photo.png'
+import photo from '../../../assets/images/building/photo.png'
 
 const Card = (props) => {
 

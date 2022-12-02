@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import s from './Layout.module.scss'
-import image from '../../assets/images/layout/Image.jpg'
+import image from '../../../assets/images/layout/Image.jpg'
 
 
 const Layout = () => {

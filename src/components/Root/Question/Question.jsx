@@ -2,9 +2,9 @@ import React from 'react'
 import Item from './Item'
 import s from './Question.module.scss'
 
-import icon1 from '../../assets/images/question/icon1.png'
-import icon2 from '../../assets/images/question/icon2.png'
-import icon3 from '../../assets/images/question/icon3.png'
+import icon1 from '../../../assets/images/question/icon1.png'
+import icon2 from '../../../assets/images/question/icon2.png'
+import icon3 from '../../../assets/images/question/icon3.png'
 
 
 const Question = () => {

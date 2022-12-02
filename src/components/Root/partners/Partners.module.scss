@@ -1,0 +1,21 @@
+@import '../../../styles/mixins';
+
+.partners {
+    padding: 0px 0px 200px 0px;
+    .container {
+        @include container;
+        .title {
+            @include globalTitle;
+        }
+        .items {
+            display: flex;
+            justify-content: space-between;
+            .item {
+                padding: 40px;
+                background: #FFFFFF;
+                box-shadow: 0px 20px 20px rgba(0, 63, 128, 0.05);
+                border-radius: 20px;
+            }
+        }
+    }
+}

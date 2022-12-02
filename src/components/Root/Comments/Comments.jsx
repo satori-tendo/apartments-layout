@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import s from './Comments.module.scss'
 import Slider from "react-slick";
-import avatar1 from '../../assets/images/comments/Photo.jpg';
-import avatar2 from '../../assets/images/comments/Photo2.jpg';
-import avatar3 from '../../assets/images/comments/Photo3.jpg';
+import avatar1 from '../../../assets/images/comments/Photo.jpg';
+import avatar2 from '../../../assets/images/comments/Photo2.jpg';
+import avatar3 from '../../../assets/images/comments/Photo3.jpg';
 
 import Comment from './Comment';
 

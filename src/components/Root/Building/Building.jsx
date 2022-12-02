@@ -4,9 +4,9 @@ import Slider from 'react-slick';
 import Card from './Card';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import Frame1 from '../../assets/images/building/Frame1.jpg'
-import Frame2 from '../../assets/images/building/Frame2.jpg'
-import Frame3 from '../../assets/images/building/Frame3.jpg'
+import Frame1 from '../../../assets/images/building/Frame1.jpg'
+import Frame2 from '../../../assets/images/building/Frame2.jpg'
+import Frame3 from '../../../assets/images/building/Frame3.jpg'
 import NextArrow from './NextArrow';
 import PrevArrow from './PrevArrow';
 

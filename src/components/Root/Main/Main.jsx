@@ -1,6 +1,6 @@
 import React from 'react'
 import s from './Main.module.scss'
-import flat from '../../assets/images/main/flat.png'
+import flat from '../../../assets/images/main/flat.png'
 
 const Main = () => {
   return (

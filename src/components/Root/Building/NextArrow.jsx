@@ -1,6 +1,6 @@
 import React from 'react'
 import s from './Building.module.scss'
-import arrowRight from '../../assets/images/building/arrowRight.png'
+import arrowRight from '../../../assets/images/building/arrowRight.png'
 
 const NextArrow = (props) => {
 

@@ -1,15 +1,15 @@
 import React from 'react'
 import s from './Gallery.module.scss'
 
-import arrowLeft from '../../assets/images/building/arrowLeft.png'
-import arrowRight from '../../assets/images/building/arrowRight.png'
+import arrowLeft from '../../../assets/images/building/arrowLeft.png'
+import arrowRight from '../../../assets/images/building/arrowRight.png'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import Photo1 from '../../assets/images/gallery/Photo1.jpg'
-import Photo2 from '../../assets/images/gallery/Photo2.jpg'
-import Photo3 from '../../assets/images/gallery/Photo3.jpg'
+import Photo1 from '../../../assets/images/gallery/Photo1.jpg'
+import Photo2 from '../../../assets/images/gallery/Photo2.jpg'
+import Photo3 from '../../../assets/images/gallery/Photo3.jpg'
 import Card from './Card';
 
 const Gallery = () => {
