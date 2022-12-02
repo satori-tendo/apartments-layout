@@ -6,6 +6,7 @@ import Layout from '../components/Layout/Layout';
 import Main from '../components/Main/Main';
 import Gallery from '../components/PhotosGallery/Gallery';
 import Question from '../components/Question/Question';
+import Reviews from '../components/Comments/Comments';
 import './_base.scss';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Layout />
         <Gallery />
         <Question />
+        <Reviews />
       </main>
       <Footer />
     </div>

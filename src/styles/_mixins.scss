@@ -27,3 +27,38 @@
     color: #FFFFFF;
     cursor: ponter;
 }
+
+@mixin comment {
+    margin: 0px 20px;
+    max-width: 620px;
+    background: #FFFFFF;
+    padding: 40px;
+    border-radius: 20px;
+    color: #002040;
+    height: 260px;
+    .info {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+        .about {
+            display: flex;
+            flex-direction: column;
+            .name {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 22px;
+            }
+            span:nth-child(2) {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;                    
+            }
+        }
+    }
+    .text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}

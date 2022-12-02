@@ -1,0 +1,28 @@
+@import '../../styles/mixins';
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
+.comments {
+    padding-bottom: 160px;
+    .container {
+        @include container;
+        .title {
+            @include globalTitle;
+        }
+    }
+    .comment {
+        @include comment;
+        margin-top: 45px;
+        transform: scale(1);
+    }
+    .nonActiveComment {
+        opacity: 0.25;
+        box-shadow: 0px 20px 20px rgba(0, 63, 128, 0.05);
+        @include comment;
+        transform: scale(.9);
+        transition: .5s;
+    }
+}
+// .slick-active + .slick-active ~ .slick-slide {
+//     opacity: 0.5;
+// }
