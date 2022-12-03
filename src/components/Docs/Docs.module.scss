@@ -1,0 +1,52 @@
+@import '../../styles/mixins';
+
+.docs {
+    padding: 120px 0px 200px 0px;
+    .container {
+        @include container;
+        max-width: 840px;
+        .title {
+            @include globalTitle;
+        }
+        .list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .item {
+                background: #FFFFFF;
+                box-shadow: 0px 20px 20px rgba(0, 63, 128, 0.05);
+                border-radius: 10px;                
+                padding: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .info {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    .document {
+                        padding: 12px;
+                    }
+                    .name {
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #002040;                        
+                    }
+                }
+                .buttons {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    button {
+                        padding: 10px;
+                        background: #F2F9FF;
+                        border-radius: 10px;
+                        border: none;
+                        cursor: pointer;               
+                    }
+                }
+            }
+        }
+    }
+}
