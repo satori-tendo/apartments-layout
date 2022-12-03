@@ -20,6 +20,23 @@
                 line-height: 20px;
                 color: #002040;
                 cursor: pointer;
+                position: relative;
+            }
+            .menuItem::after {
+                content: '';
+                border-bottom: 2px solid #002040;
+                border-radius: 2px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                transform: scaleX(0);
+                // transform-origin: right;
+                transition: transform .3s;
+            }
+            .menuItem:hover::after {
+                transform: scaleX(1);
+                // transform-origin: left;
             }
         }
     }

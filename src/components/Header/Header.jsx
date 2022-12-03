@@ -2,20 +2,22 @@ import React from 'react'
 import s from './Header.module.scss'
 import logo from '../../assets/images/header/Logo.svg'
 import phoneButton from '../../assets/images/header/Button.png'
+import { Link } from 'react-router-dom'
+
 
 const Header = (props) => {
     return (
         <header className={s.header}>
             <div className={s.container}>
                 <div className="header__image">
-                    <img src={logo} alt="" />
+                    <Link to={'/'}><img src={logo} alt="" /></Link>
                 </div>
                 <nav className={s.menu}>
                     <ul className={s.list}>
-                        <li className={s.menuItem}>О компании</li>
-                        <li className={s.menuItem}>Новости</li>
-                        <li className={s.menuItem}>Документы</li>
-                        <li className={s.menuItem}>Контакты</li>
+                        <Link to={'/about'}><li className={s.menuItem}>О компании</li></Link>
+                        <Link to={'/news'}><li className={s.menuItem}>Новости</li></Link>
+                        <Link to={'/docs'}><li className={s.menuItem}>Документы</li></Link>
+                        <Link to={'/'}><li className={s.menuItem}>Контакты</li></Link>
                     </ul>
                 </nav>
                 <div className={s.contacts}>

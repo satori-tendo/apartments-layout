@@ -2,6 +2,9 @@
 
 html {
     scroll-behavior: smooth
+    a {
+        text-decoration: none;
+    }
 }
 body {
     background-color: $background;
